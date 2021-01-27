@@ -8,6 +8,14 @@ Xcode 12.3
 
 iPod touch - 7th generation - iOS 14.3
 
+## What is happening?
+
+Methods that modifies multiple viewControllers at once break the order of `viewControllers` as well as elements. We could at least reproduce the same bug with following methods:
+
+* popToRootViewController
+* popToViewController
+* setViewControllers
+
 ## Refs
 
 * https://developer.apple.com/forums/thread/656524
